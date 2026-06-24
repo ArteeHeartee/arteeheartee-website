@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArteeHeartee</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+<nav class="navbar">
+    <a href="#top" class="logo">ArteeHeartee 🐾</a>
+
+    <div class="nav-links">
+        <a href="#top">Home</a>
+        <a href="#crew">Crew</a>
+        <a href="#videos">Videos</a>
+        <a href="#boutique">Fur Boutique™</a>
+        <a href="https://www.tiktok.com/@arteeheartee" target="_blank" class="nav-social tiktok">♪</a>
+        <a href="https://www.youtube.com/@ArteeHearteee" target="_blank" class="nav-social youtube">▶</a>
+    </div>
+</nav>
+
+<main>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>ArteeHeartee</h1>
+        <div class="paw-divider">🐾</div>
+        <p>Life with two ragdolls, two humans, and an alarming amount of fur.</p>
+
+        <div class="hero-buttons">
+            <a href="#videos" class="button primary">▶ Watch Videos</a>
+            <a href="#crew" class="button secondary">🐾 Meet The Crew</a>
+        </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+        <img src="images/LydiaLondon Holding BIG.jpg" alt="Andreas holding Lydia and London" class="hero-image">
+    </div>
+
+    <aside class="video-panel">
+        <div id="featured-video"></div>
+        <div id="top-videos"></div>
+    </aside>
+</section>
+
+<section id="crew" class="section">
+    <h2>Meet The Crew</h2>
+    <div class="section-icon">🐾</div>
+
+    <div class="cards">
+        <article class="card profile pink">
+            <img src="images/Lydia1.jpg" alt="Lydia">
+            <h3>Lydia 🐾</h3>
+            <p>💤 Professional napper.</p>
+            <p>🍱 Treat quality inspector.</p>
+            <p>😼 Meows loudly if not carried to bed.</p>
+        </article>
+
+        <article class="card profile blue">
+            <img src="images/London1.jpg" alt="London">
+            <h3>London 🐾</h3>
+            <p>☁️ Director of fluff distribution.</p>
+            <p>💗 Certified cuddle expert.</p>
+            <p>🐾 Occasionally cooperative.</p>
+        </article>
+
+        <article class="card profile purple">
+            <img src="images/ART update.jpg" alt="Andreas">
+            <h3>Andreas 🐾</h3>
+            <p>🧍 Human assistant.</p>
+            <p>📸 Camera operator.</p>
+            <p>🧀 Full-time snack provider.</p>
+        </article>
+    </div>
+</section>
+
+<section id="boutique" class="section">
+    <h2>Fur Boutique™</h2>
+    <p class="subtitle">Luxury, exclusivity, and absolutely no practical purpose.</p>
+
+    <div class="cards">
+        <article class="card product pink">
+            <div class="badge">🪶</div>
+            <h3>Lydia Reserve™</h3>
+            <p class="stars">★★★★★</p>
+            <p>Collected from only the finest brushing sessions.</p>
+            <p class="price">99 USD</p>
+            <button onclick="furMessage()">🛒 Add To Cart</button>
+        </article>
+
+        <article class="card product blue">
+            <div class="badge">🪶</div>
+            <h3>London Signature™</h3>
+            <p class="stars">★★★★★</p>
+            <p>Exceptionally fluffy. Naturally dramatic.</p>
+            <p class="price">49 USD</p>
+            <button onclick="furMessage()">🛒 Add To Cart</button>
+        </article>
+
+        <article class="card product purple">
+            <div class="badge">?</div>
+            <h3>Mystery Blend™</h3>
+            <p class="stars">★★★★★</p>
+            <p>Origins unknown. Quality unquestionable.</p>
+            <p class="price">15 USD</p>
+            <button onclick="furMessage()">🛒 Add To Cart</button>
+        </article>
+    </div>
+
+    <p class="disclaimer">*All products are 100% authentic. Not approved for actual use. 🐱</p>
+</section>
+
+<section id="videos" class="section videos-section">
+    <h2>Watch More</h2>
+    <div class="section-icon">🐾</div>
+
+    <div class="socials">
+        <a class="social-card" href="https://www.tiktok.com/@arteeheartee" target="_blank">
+            <span class="social-icon tiktok">♪</span>
+            <div>
+                <h3>TikTok</h3>
+                <p>@arteeheartee</p>
+            </div>
+            <span class="arrow">→</span>
+        </a>
+
+        <a class="social-card" href="https://www.youtube.com/@ArteeHearteee" target="_blank">
+            <span class="social-icon youtube">▶</span>
+            <div>
+                <h3>YouTube</h3>
+                <p>ArteeHeartee</p>
+            </div>
+            <span class="arrow">→</span>
+        </a>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <h3>ArteeHeartee 🐾</h3>
+    <p>Powered by fluff, chaos, and poor business decisions.</p>
+
+    <p class="footer-links">
+        <a href="https://www.tiktok.com/@arteeheartee" target="_blank">TikTok</a>
+        ·
+        <a href="https://www.youtube.com/@ArteeHearteee" target="_blank">YouTube</a>
+        ·
+        <a href="#" onclick="contactPopup()">Contact</a>
+    </p>
+</footer>
+
+<script src="videos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
