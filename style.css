@@ -613,3 +613,23 @@ footer h3 {
         max-width: 345px;
     }
 }
+/* TOP VIDEOS SCROLL AREA */
+
+#top-videos {
+    max-height: 360px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+#top-videos::-webkit-scrollbar {
+    width: 6px;
+}
+
+#top-videos::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#top-videos::-webkit-scrollbar-thumb {
+    background: rgba(124, 58, 237, 0.35);
+    border-radius: 999px;
+}
