@@ -102,40 +102,38 @@ topVideos.forEach((video,index)=>{
 });
 /* ---------- Animated Counters ---------- */
 
-const counters = document.querySelectorAll(".number");
+function startCounters() {
+    const counters = document.querySelectorAll(".number");
 
-const formatNumber = (num) => {
-    if (num >= 1000000) {
-        return (num / 1000000).toFixed(1).replace(".0", "") + "M";
-    }
+    counters.forEach((counter) => {
+        const target = Number(counter.getAttribute("data-target"));
+        const duration = 1400;
+        const startTime = performance.now();
 
-    return num.toLocaleString("en-US");
-};
+        function formatNumber(num) {
+            if (num >= 1000000) {
+                return (num / 1000000).toFixed(1).replace(".0", "") + "M";
+            }
 
-const animateCounter = (counter) => {
-    const target = Number(counter.getAttribute("data-target"));
-    const duration = 1400;
-    const startTime = performance.now();
-
-    const update = (currentTime) => {
-        const progress = Math.min((currentTime - startTime) / duration, 1);
-
-        const easedProgress = 1 - Math.pow(1 - progress, 3);
-
-        const currentValue = Math.floor(easedProgress * target);
-
-        counter.textContent = formatNumber(currentValue);
-
-        if (progress < 1) {
-            requestAnimationFrame(update);
-        } else {
-            counter.textContent = formatNumber(target);
+            return num.toLocaleString("en-US");
         }
-    };
 
-    requestAnimationFrame(update);
-};
+        function update(currentTime) {
+            const progress = Math.min((currentTime - startTime) / duration, 1);
+            const easedProgress = 1 - Math.pow(1 - progress, 3);
+            const currentValue = Math.floor(easedProgress * target);
 
-window.addEventListener("load", () => {
-    counters.forEach((counter) => animateCounter(counter));
-});
+            counter.textContent = formatNumber(currentValue);
+
+            if (progress < 1) {
+                requestAnimationFrame(update);
+            } else {
+                counter.textContent = formatNumber(target);
+            }
+        }
+
+        requestAnimationFrame(update);
+    });
+}
+
+setTimeout(startCounters, 300);
