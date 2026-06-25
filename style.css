@@ -383,11 +383,18 @@ section {
     border-bottom: 0;
 }
 
-.video-card img {
+.video-thumb-link img {
     width: 92px;
     height: 60px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.small-logo-link img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 0;
 }
 
 .video-info {
@@ -862,10 +869,19 @@ footer h3 {
         gap: 10px;
     }
 
-    .video-card img {
-        width: 82px;
-        height: 54px;
-    }
+   .video-thumb-link img {
+    width: 92px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.small-logo-link img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 0;
+}
 
     .video-info h4 {
         font-size: 0.84rem;
