@@ -54,18 +54,21 @@ section {
 }
 
 .nav-social {
-    width:44px;
-    height:44px;
-    border-radius:50%;
-    background:rgba(255,255,255,.75);
-    backdrop-filter:blur(10px);
-    border:1px solid rgba(124,58,237,.12);
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.25s;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: white;
+    border: 2px solid #e8e8ef;
+    box-shadow: 0 8px 18px rgba(0,0,0,.08);
+    overflow: hidden;
+    transition: .25s;
 }
 
-.nav-social:hover{
-    transform:translateY(-3px) scale(1.05);
+.nav-social:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0,0,0,.12);
 }
 
 .nav-social img {
