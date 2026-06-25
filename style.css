@@ -589,23 +589,23 @@ footer h3 {
     .hero {
         min-height: calc(100vh - 70px);
         align-items: start;
-        padding-top: 52px;
+        padding-top: 28px;
         padding-bottom: 40px;
         gap: 36px;
     }
 
     .hero-text {
-        padding-top: 95px;
+        padding-top: 48px;
         transform: none;
     }
 
     .hero-photo-wrap {
-        margin-top: 0;
+        margin-top: 18px;
         transform: none;
     }
 
     .video-panel {
-        margin-top: 0;
+        margin-top: 18px;
         transform: none;
     }
 
