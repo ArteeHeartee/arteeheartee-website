@@ -309,14 +309,11 @@ section {
 }
 
 .video-logo-link,
-.small-logo-link {
-    display: inline-grid;
-    place-items: center;
-    border-radius: 50%;
-    background: white;
-    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-    transition: all 0.25s ease;
-    overflow: hidden;
+.small-logo-link img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    display: block;
 }
 
 .video-logo-link {
@@ -331,16 +328,11 @@ section {
     border-radius: 0;
 }
 
-.small-logo-link {
-    width: 34px;
-    height: 34px;
-    display: inline-grid;
-    place-items: center;
-    border-radius: 50%;
-    background: white;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
-    transition: all 0.25s ease;
-    overflow: visible;
+.small-logo-link img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    display: block;
 }
 
 .small-logo-link img {
