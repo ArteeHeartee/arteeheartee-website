@@ -114,12 +114,15 @@ const formatNumber = (num) => {
 
 const animateCounter = (counter) => {
     const target = Number(counter.getAttribute("data-target"));
-    const duration = 1200;
+    const duration = 1400;
     const startTime = performance.now();
 
     const update = (currentTime) => {
         const progress = Math.min((currentTime - startTime) / duration, 1);
-        const currentValue = Math.floor(progress * target);
+
+        const easedProgress = 1 - Math.pow(1 - progress, 3);
+
+        const currentValue = Math.floor(easedProgress * target);
 
         counter.textContent = formatNumber(currentValue);
 
@@ -133,19 +136,6 @@ const animateCounter = (counter) => {
     requestAnimationFrame(update);
 };
 
-const statsObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            counters.forEach((counter) => animateCounter(counter));
-            statsObserver.disconnect();
-        }
-    });
-}, {
-    threshold: 0.4
+window.addEventListener("load", () => {
+    counters.forEach((counter) => animateCounter(counter));
 });
-
-const statsSection = document.querySelector(".stats-support");
-
-if (statsSection) {
-    statsObserver.observe(statsSection);
-}
