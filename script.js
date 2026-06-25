@@ -35,13 +35,13 @@ featuredContainer.innerHTML = `
     <a href="${featuredVideo.tiktok}"
        target="_blank"
        class="video-logo-link">
-        <img src="images/TikTokLogoNew.jpg" alt="TikTok">
+        <img src="images/TikTokLogoNew1.png" alt="TikTok">
     </a>
 
     <a href="${featuredVideo.youtube}"
        target="_blank"
        class="video-logo-link">
-        <img src="images/YoutubeLogoNew.jpg" alt="YouTube">
+        <img src="images/YoutubeLogoNew1.png" alt="YouTube">
     </a>
 
 </div>
@@ -82,13 +82,13 @@ topVideos.forEach((video,index)=>{
     <a href="${video.tiktok}"
        target="_blank"
        class="small-logo-link">
-        <img src="images/TikTokLogoNew.jpg" alt="TikTok">
+        <img src="images/TikTokLogoNew1.png" alt="TikTok">
     </a>
 
     <a href="${video.youtube}"
        target="_blank"
        class="small-logo-link">
-        <img src="images/YoutubeLogoNew.jpg" alt="YouTube">
+        <img src="images/YoutubeLogoNew1.png" alt="YouTube">
     </a>
 
 </div>
