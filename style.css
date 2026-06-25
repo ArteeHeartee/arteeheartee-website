@@ -721,3 +721,80 @@ footer h3 {
         grid-template-columns: 1fr;
     }
 }
+/* SHOP DROPDOWN */
+
+.shop-menu {
+    position: relative;
+}
+
+.shop-toggle {
+    background: transparent;
+    color: #11142a;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.shop-dropdown {
+    position: absolute;
+    top: 42px;
+    right: 0;
+    width: 310px;
+    background: white;
+    border-radius: 22px;
+    padding: 14px;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.16);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: all 0.25s ease;
+    z-index: 200;
+}
+
+.shop-menu:hover .shop-dropdown,
+.shop-menu:focus-within .shop-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.shop-dropdown a,
+.shop-coming {
+    display: block;
+    padding: 14px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #11142a;
+}
+
+.shop-dropdown a:hover {
+    background: #fbf5ff;
+}
+
+.shop-dropdown strong,
+.shop-coming strong {
+    display: block;
+    font-size: 1rem;
+}
+
+.shop-dropdown span,
+.shop-coming span {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.88rem;
+    color: #555;
+}
+
+.shop-coming {
+    opacity: 0.65;
+}
+
+.shop-dropdown p {
+    margin: 12px 10px 4px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #7c3aed;
+    font-weight: 700;
+}
