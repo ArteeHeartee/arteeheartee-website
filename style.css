@@ -54,13 +54,18 @@ section {
 }
 
 .nav-social {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    background: #11142a;
-    overflow: hidden;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(124,58,237,.12);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.25s;
+}
+
+.nav-social:hover{
+    transform:translateY(-3px) scale(1.05);
 }
 
 .nav-social img {
