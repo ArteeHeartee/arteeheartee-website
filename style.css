@@ -596,17 +596,17 @@ footer h3 {
 
     .hero-text {
         padding-top: 0;
-        transform: translateY(-25px);
+        transform: translateY(-85px);
     }
 
     .hero-photo-wrap {
         margin-top: 0;
-        transform: translateY(-28px);
+        transform: translateY(-85px);
     }
 
     .video-panel {
         margin-top: 0;
-        transform: translateY(-28px);
+        transform: translateY(-85px);
     }
 
     .hero-image {
