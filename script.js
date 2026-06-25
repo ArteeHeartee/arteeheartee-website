@@ -32,19 +32,19 @@ featuredContainer.innerHTML = `
 
     <div class="video-buttons">
 
-        <a href="${featuredVideo.tiktok}"
-           target="_blank"
-           class="video-btn tiktok-btn">
-           ♪ TikTok
-        </a>
+    <a href="${featuredVideo.tiktok}"
+       target="_blank"
+       class="video-logo-link">
+        <img src="images/TikTokLogo.jpg" alt="TikTok">
+    </a>
 
-        <a href="${featuredVideo.youtube}"
-           target="_blank"
-           class="video-btn youtube-btn">
-           ▶ YouTube
-        </a>
+    <a href="${featuredVideo.youtube}"
+       target="_blank"
+       class="video-logo-link">
+        <img src="images/YoutubeLogo.jpg" alt="YouTube">
+    </a>
 
-    </div>
+</div>
 
 </div>
 `;
@@ -79,19 +79,19 @@ topVideos.forEach((video,index)=>{
 
             <div class="video-links">
 
-                <a href="${video.tiktok}"
-                   target="_blank"
-                   class="small-btn tiktok-btn">
-                    ♪
-                </a>
+    <a href="${video.tiktok}"
+       target="_blank"
+       class="small-logo-link">
+        <img src="images/TikTokLogo.jpg" alt="TikTok">
+    </a>
 
-                <a href="${video.youtube}"
-                   target="_blank"
-                   class="small-btn youtube-btn">
-                    ▶
-                </a>
+    <a href="${video.youtube}"
+       target="_blank"
+       class="small-logo-link">
+        <img src="images/YoutubeLogo.jpg" alt="YouTube">
+    </a>
 
-            </div>
+</div>
 
         </div>
 
