@@ -583,3 +583,29 @@ footer h3 {
         width: min(340px, 95%);
     }
 }
+/* LAPTOP HERO BALANCE FIX */
+
+@media (min-width: 1251px) {
+    .hero {
+        min-height: calc(100vh - 70px);
+        align-items: center;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .hero-text {
+        transform: translateY(-45px);
+    }
+
+    .hero-photo-wrap {
+        transform: translateY(-30px);
+    }
+
+    .video-panel {
+        transform: translateY(-20px);
+    }
+
+    .hero-image {
+        max-width: 340px;
+    }
+}
