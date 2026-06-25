@@ -143,3 +143,20 @@ function startCounters() {
 }
 
 setTimeout(startCounters, 300);
+/* ---------- Shop Dropdown Toggle ---------- */
+
+const shopMenu = document.querySelector(".shop-menu");
+const shopToggle = document.querySelector(".shop-toggle");
+
+if (shopMenu && shopToggle) {
+    shopToggle.addEventListener("click", (event) => {
+        event.stopPropagation();
+        shopMenu.classList.toggle("open");
+    });
+
+    document.addEventListener("click", (event) => {
+        if (!shopMenu.contains(event.target)) {
+            shopMenu.classList.remove("open");
+        }
+    });
+}
