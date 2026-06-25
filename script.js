@@ -149,14 +149,31 @@ const shopMenu = document.querySelector(".shop-menu");
 const shopToggle = document.querySelector(".shop-toggle");
 
 if (shopMenu && shopToggle) {
-    shopToggle.addEventListener("click", (event) => {
-        event.stopPropagation();
+
+    shopToggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
         shopMenu.classList.toggle("open");
     });
 
-    document.addEventListener("click", (event) => {
-        if (!shopMenu.contains(event.target)) {
+    document.addEventListener("click", (e) => {
+        if (!shopMenu.contains(e.target)) {
             shopMenu.classList.remove("open");
         }
     });
+
+    document.querySelectorAll(".shop-dropdown a").forEach(link => {
+        link.addEventListener("click", () => {
+            shopMenu.classList.remove("open");
+        });
+    });
+
 }
+/* Close menu after clicking an item */
+
+document.querySelectorAll(".shop-dropdown a").forEach(link => {
+    link.addEventListener("click", () => {
+        shopMenu.classList.remove("open");
+    });
+});
