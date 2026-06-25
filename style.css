@@ -203,30 +203,40 @@ section {
 }
 
 .hero-stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     margin-top: 34px;
     max-width: 560px;
     background: rgba(255,255,255,0.78);
     border-radius: 24px;
-    padding: 18px 10px;
+    padding: 18px 20px;
     box-shadow: 0 16px 38px rgba(0,0,0,0.09);
     backdrop-filter: blur(14px);
 }
 
-.hero-stats div {
+.stats-title {
+    font-size: 0.95rem;
+    font-weight: 900;
+    color: #11142a;
+    margin-bottom: 14px;
+}
+
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stats-row div {
     text-align: center;
     padding: 6px 12px;
     border-right: 1px solid rgba(124,58,237,0.15);
 }
 
-.hero-stats div:last-child {
+.stats-row div:last-child {
     border-right: 0;
 }
 
 .hero-stats .number {
     display: block;
-    font-size: 2.1rem;
+    font-size: 2.15rem;
     font-weight: 900;
     color: #7c3aed;
 }
@@ -234,7 +244,7 @@ section {
 .hero-stats .label {
     display: block;
     margin-top: 4px;
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     color: #333;
 }
 
@@ -842,31 +852,38 @@ footer h3 {
     }
 
     .hero-stats {
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 350px;
-        margin: 24px auto 0;
-        padding: 12px 6px;
-        border-radius: 20px;
-    }
+    max-width: 350px;
+    margin: 24px auto 0;
+    padding: 16px 14px;
+    border-radius: 22px;
+}
 
-    .hero-stats div {
-        padding: 5px 5px;
-        border-right: 1px solid rgba(124,58,237,0.15);
-        border-bottom: 0;
-    }
+.stats-title {
+    text-align: center;
+    margin-bottom: 12px;
+}
 
-    .hero-stats div:last-child {
-        border-right: 0;
-    }
+.stats-row {
+    grid-template-columns: repeat(3, 1fr);
+}
 
-    .hero-stats .number {
-        font-size: 1.35rem;
-    }
+.stats-row div {
+    padding: 5px 6px;
+    border-right: 1px solid rgba(124,58,237,0.15);
+}
 
-    .hero-stats .label {
-        font-size: 0.65rem;
-        line-height: 1.2;
-    }
+.stats-row div:last-child {
+    border-right: 0;
+}
+
+.hero-stats .number {
+    font-size: 1.35rem;
+}
+
+.hero-stats .label {
+    font-size: 0.68rem;
+    line-height: 1.2;
+}
 
     .video-panel {
         order: 2;
