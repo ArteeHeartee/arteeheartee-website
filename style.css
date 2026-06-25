@@ -98,7 +98,6 @@ section {
     z-index: 200;
 }
 
-.shop-menu:hover .shop-dropdown,
 .shop-menu.open .shop-dropdown {
     opacity: 1;
     visibility: visible;
@@ -801,8 +800,7 @@ footer h3 {
         transform: translate(-50%, 12px);
     }
 
-    .shop-menu:hover .shop-dropdown,
-.shop-menu.open .shop-dropdown {
+    .shop-menu.open .shop-dropdown {
     transform: translate(-50%, 0);
 }
 
