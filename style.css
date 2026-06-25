@@ -556,3 +556,45 @@ footer h3 {
         width: min(340px, 95%);
     }
 }
+.nav-social img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    display: block;
+}
+
+.video-logo-link img,
+.small-logo-link img,
+.social-icon img {
+    object-fit: contain;
+    display: block;
+}
+
+.video-logo-link {
+    width: 44px;
+    height: 44px;
+    display: inline-grid;
+    place-items: center;
+}
+
+.video-logo-link img {
+    width: 34px;
+    height: 34px;
+}
+
+.small-logo-link {
+    width: 32px;
+    height: 32px;
+    display: inline-grid;
+    place-items: center;
+}
+
+.small-logo-link img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon img {
+    width: 34px;
+    height: 34px;
+}
