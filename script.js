@@ -100,3 +100,52 @@ topVideos.forEach((video,index)=>{
     `;
 
 });
+/* ---------- Animated Counters ---------- */
+
+const counters = document.querySelectorAll(".number");
+
+const formatNumber = (num) => {
+    if (num >= 1000000) {
+        return (num / 1000000).toFixed(1).replace(".0", "") + "M";
+    }
+
+    return num.toLocaleString("en-US");
+};
+
+const animateCounter = (counter) => {
+    const target = Number(counter.getAttribute("data-target"));
+    const duration = 1200;
+    const startTime = performance.now();
+
+    const update = (currentTime) => {
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+        const currentValue = Math.floor(progress * target);
+
+        counter.textContent = formatNumber(currentValue);
+
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        } else {
+            counter.textContent = formatNumber(target);
+        }
+    };
+
+    requestAnimationFrame(update);
+};
+
+const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            counters.forEach((counter) => animateCounter(counter));
+            statsObserver.disconnect();
+        }
+    });
+}, {
+    threshold: 0.4
+});
+
+const statsSection = document.querySelector(".stats-support");
+
+if (statsSection) {
+    statsObserver.observe(statsSection);
+}
