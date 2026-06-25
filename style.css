@@ -583,53 +583,33 @@ footer h3 {
         width: min(340px, 95%);
     }
 }
-/* LAPTOP HERO BALANCE FIX */
+/* CLEAN LAPTOP HERO FIX */
 
 @media (min-width: 1251px) {
     .hero {
-        min-height: calc(100vh - 70px);
+        min-height: 720px;
         align-items: center;
-        padding-top: 18px;
-        padding-bottom: 18px;
+        gap: 36px;
+        padding-top: 26px;
+        padding-bottom: 26px;
     }
 
     .hero-text {
-        transform: translateY(-45px);
+        padding-top: 0;
+        transform: translateY(-25px);
     }
 
     .hero-photo-wrap {
-        transform: translateY(-30px);
+        margin-top: 0;
+        transform: translateY(-28px);
     }
 
     .video-panel {
-        transform: translateY(-20px);
+        margin-top: 0;
+        transform: translateY(-28px);
     }
 
     .hero-image {
-        max-width: 340px;
-    }
-}
-/* FINAL LAPTOP HERO POSITION FIX */
-
-@media (min-width: 1251px) {
-    .hero {
-        align-items: start;
-        padding-top: 34px;
-    }
-
-    .hero-text {
-        transform: translateY(-15px);
-    }
-
-    .hero-photo-wrap {
-        transform: translateY(-65px);
-    }
-
-    .video-panel {
-        transform: translateY(-65px);
-    }
-
-    .hero-image {
-        max-width: 350px;
+        max-width: 345px;
     }
 }
