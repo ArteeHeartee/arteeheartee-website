@@ -583,30 +583,30 @@ footer h3 {
         width: min(340px, 95%);
     }
 }
-/* CLEAN LAPTOP HERO FIX */
+/* CLEAN LAPTOP HERO LAYOUT */
 
 @media (min-width: 1251px) {
     .hero {
-        min-height: 720px;
-        align-items: center;
+        min-height: calc(100vh - 70px);
+        align-items: start;
+        padding-top: 52px;
+        padding-bottom: 40px;
         gap: 36px;
-        padding-top: 26px;
-        padding-bottom: 26px;
     }
 
     .hero-text {
-        padding-top: 0;
-        transform: translateY(-85px);
+        padding-top: 95px;
+        transform: none;
     }
 
     .hero-photo-wrap {
         margin-top: 0;
-        transform: translateY(-85px);
+        transform: none;
     }
 
     .video-panel {
         margin-top: 0;
-        transform: translateY(-85px);
+        transform: none;
     }
 
     .hero-image {
