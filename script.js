@@ -23,12 +23,14 @@ featuredContainer.innerHTML = `
         ⭐ Featured Video
     </div>
 
+    <a href="${featuredVideo.youtube}" target="_blank" class="video-main-link">
     <img
         src="https://img.youtube.com/vi/${featuredVideo.youtubeId}/maxresdefault.jpg"
         alt="${featuredVideo.title}"
     >
 
     <h3>${featuredVideo.title}</h3>
+</a>
 
     <div class="video-buttons">
 
@@ -64,10 +66,12 @@ topVideos.forEach((video,index)=>{
 
     <div class="video-card">
 
-        <img
-            src="https://img.youtube.com/vi/${video.youtubeId}/mqdefault.jpg"
-            alt="${video.title}"
-        >
+        <a href="${video.youtube}" target="_blank" class="video-thumb-link">
+    <img
+        src="https://img.youtube.com/vi/${video.youtubeId}/mqdefault.jpg"
+        alt="${video.title}"
+    >
+</a>
 
         <div class="video-info">
 
@@ -75,7 +79,9 @@ topVideos.forEach((video,index)=>{
                 #${index+1}
             </span>
 
-            <h4>${video.title}</h4>
+            <a href="${video.youtube}" target="_blank" class="video-title-link">
+    <h4>${video.title}</h4>
+</a>
 
             <div class="video-links">
 
