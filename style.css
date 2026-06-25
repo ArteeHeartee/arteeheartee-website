@@ -827,3 +827,26 @@ footer h3 {
     font-size: 0.85rem;
     color: #333;
 }
+.video-main-link,
+.video-thumb-link,
+.video-title-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.video-main-link img {
+    cursor: pointer;
+}
+
+.video-main-link:hover h3,
+.video-title-link:hover h4 {
+    color: #7c3aed;
+}
+
+.video-thumb-link img {
+    transition: transform 0.25s ease;
+}
+
+.video-thumb-link:hover img {
+    transform: scale(1.04);
+}
