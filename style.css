@@ -609,3 +609,27 @@ footer h3 {
         max-width: 340px;
     }
 }
+/* FINAL LAPTOP HERO POSITION FIX */
+
+@media (min-width: 1251px) {
+    .hero {
+        align-items: start;
+        padding-top: 34px;
+    }
+
+    .hero-text {
+        transform: translateY(-15px);
+    }
+
+    .hero-photo-wrap {
+        transform: translateY(-65px);
+    }
+
+    .video-panel {
+        transform: translateY(-65px);
+    }
+
+    .hero-image {
+        max-width: 350px;
+    }
+}
