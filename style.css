@@ -99,7 +99,7 @@ section {
 }
 
 .shop-menu:hover .shop-dropdown,
-.shop-menu:focus-within .shop-dropdown {
+.shop-menu.open .shop-dropdown {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -802,9 +802,9 @@ footer h3 {
     }
 
     .shop-menu:hover .shop-dropdown,
-    .shop-menu:focus-within .shop-dropdown {
-        transform: translate(-50%, 0);
-    }
+.shop-menu.open .shop-dropdown {
+    transform: translate(-50%, 0);
+}
 
     .hero {
         min-height: auto;
