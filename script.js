@@ -4,7 +4,7 @@ function furMessage() {
 
 function contactPopup() {
     const subject = encodeURIComponent("Message from ArteeHeartee");
-    const body = encodeURIComponent("Hi Andreas,\n\n");
+    const body = encodeURIComponent("Hiya Artee,\n\n");
     window.location.href =
         "mailto:andreasrtee@gmail.com?subject=" +
         subject +
@@ -41,7 +41,7 @@ featuredContainer.innerHTML = `
     <a href="${featuredVideo.youtube}"
        target="_blank"
        class="video-logo-link">
-        <img src="images/YoutubeLogoNew1.png" alt="YouTube">
+        <img src="images/YouTubeLogoNew1.png" alt="YouTube">
     </a>
 
 </div>
@@ -88,7 +88,7 @@ topVideos.forEach((video,index)=>{
     <a href="${video.youtube}"
        target="_blank"
        class="small-logo-link">
-        <img src="images/YoutubeLogoNew1.png" alt="YouTube">
+        <img src="images/YouTubeLogoNew1.png" alt="YouTube">
     </a>
 
 </div>
